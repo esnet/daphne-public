@@ -62,13 +62,10 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
    
 *********
  
-* in \experiment folder run the following via terminal:
+* in \experiment folder run the following files via terminal or notebooks:
 
         deeproute_rl_dqn_agent.py
         deeproute_rl_random_agent.py
-        
-* OR the following jupyter notebooks
-
         deeproute_rl_dqn_agent.ipynb
         deeproute_rl_random_agent.ipynb
         
