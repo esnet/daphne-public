@@ -69,8 +69,9 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
   
   ```sudo pip3 install tensorflow```
   
-   * cd Chameleon/deeproute-gym-stat-master
-   * sudo pip3 install -e .
+  ```cd Chameleon/deeproute-gym-stat-master```
+  
+  ```sudo pip3 install -e .```
    
 *********
  
