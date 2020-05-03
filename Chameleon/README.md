@@ -38,16 +38,16 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
     
 # To Reproduce the experiments: 
      
-* Login to your Controller node at (TACC) and clone this repo - https://github.com/bashirmohd/rl_chameleon.git
+* Login to your Controller node at (TACC) and clone this repo - https://github.com/esnet/daphne-public.git
 
- ```git clone https://github.com/bashirmohd/rl_chameleon.git```
+ ```https://github.com/esnet/daphne-public.git```
  
-    * cd ~/rlchameleon: 
+    * cd ~/Chameleon: 
  * Dependencies: install in the following order: ignore errors
  
   ```sudo apt-get install -y python3-setuptools```
   
-  ```sudo pytho3 setup.py install```
+  ```sudo python3 setup.py install```
   
   ```sudo pip3 install -e .```
   
@@ -69,11 +69,12 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
   
   ```sudo pip3 install tensorflow```
   
- cd rl_chameleon/deeproute-gym-stat-master
-sudo pip3 install -e .
+   * cd Chameleon/deeproute-gym-stat-master
+   * sudo pip3 install -e .
+   
 *********
  
-* in \tests folder run the following via terminal:
+* in \experiment folder run the following via terminal:
     
         deeproute_rl_dqn_agent.py
         deeproute_rl_random_agent.py
@@ -115,7 +116,7 @@ If you use DeepRoute for academic or industrial research, please feel free to ci
 ```
 ## Contacts
 
-* Bashir Mohammed
+* [Bashir Mohammed](https://sites.google.com/lbl.gov/daphne/home?authuser=0)
 * [Mariam Kiran ](https://sites.google.com/lbl.gov/daphne/home?authuser=0)
         
    
