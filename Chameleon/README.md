@@ -1,11 +1,10 @@
 <p align="center">
-<img src="https://github.com/esnet/daphne-public/tree/master/Chameleon/figires/cham_topo.pdf" width="100%" height="100%" title="FlexiBO logo">
+<img src="https://github.com/esnet/daphne-public/blob/master/Chameleon/figures/cham_topo.png" width="100%" height="100%" title="cham_topo">
 <p>
 
 # DeepRoute: An AI gym enviroment for Deep Route on Chameleon Testbed (deeproute-gym)
-
-This is a simulation of DEEP-ROUTE link selection experiment. 
-DEEP-ROUTE has two links between the University of Chicago(UC) and Texas Advanced Computing Center(TACC) multi-side via Exogeni and Internet2 L2 socket. The experiment is to represent this optimal link selection as a deep reinforcement learning experiment.
+This is a simulation for deep route network route selection experiment. 
+DeepRoute has two links between the University of Chicago(UC) and Texas Advanced Computing Center(TACC) multi-side via Exogeni and Internet2 L2 socket. The experiment is to represent this optimal link selection as a deep reinforcement learning experiment.
 
 
 # Resources and Tools Required for Reproducibilty
@@ -39,16 +38,16 @@ DEEP-ROUTE has two links between the University of Chicago(UC) and Texas Advance
     
 # To Reproduce the experiments: 
      
-* Login to your Controller node at (TACC) and clone this repo - https://github.com/bashirmohd/rl_chameleon.git
+* Login to your Controller node at (TACC) and clone this repo - https://github.com/esnet/daphne-public.git
 
- ```git clone https://github.com/bashirmohd/rl_chameleon.git```
+ ```https://github.com/esnet/daphne-public.git```
  
-    * cd ~/rlchameleon: 
+    * cd ~/Chameleon: 
  * Dependencies: install in the following order: ignore errors
  
   ```sudo apt-get install -y python3-setuptools```
   
-  ```sudo pytho3 setup.py install```
+  ```sudo python3 setup.py install```
   
   ```sudo pip3 install -e .```
   
@@ -70,11 +69,12 @@ DEEP-ROUTE has two links between the University of Chicago(UC) and Texas Advance
   
   ```sudo pip3 install tensorflow```
   
- cd rl_chameleon/deeproute-gym-stat-master
-sudo pip3 install -e .
+   * cd Chameleon/deeproute-gym-stat-master
+   * sudo pip3 install -e .
+   
 *********
  
-* in \tests folder run the following via terminal:
+* in \experiment folder run the following via terminal:
     
         deeproute_rl_dqn_agent.py
         deeproute_rl_random_agent.py
@@ -90,9 +90,33 @@ sudo pip3 install -e .
         
         Please note that this experiment was succesfully reproduced using Ubuntu OS.
 
+
+## Citing this work
+
+If you use DeepRoute for academic or industrial research, please feel free to cite the following papers:
+
+```
+@inproceedings{mohammed2019deeproute,
+  title={DeepRoute on Chameleon: Experimenting with Large-scale Reinforcement Learning and SDN on Chameleon Testbed},
+  author={Mohammed, Bashir and Kiran, Mariam and Krishnaswamy, Nandini},
+  booktitle={2019 IEEE 27th International Conference on Network Protocols (ICNP)},
+  pages={1--2},
+  year={2019},
+  organization={IEEE}
+}
+
+@inproceedings{kiran2019deeproute,
+  title={DeepRoute: Herding Elephant and Mice Flows with Reinforcement Learning},
+  author={Kiran, Mariam and Mohammed, Bashir and Krishnaswamy, Nandini},
+  booktitle={International Conference on Machine Learning for Networking},
+  pages={296--314},
+  year={2019},
+  organization={Springer}
+}
+```
 ## Contacts
 
-* Bashir Mohammed
+* [Bashir Mohammed](https://sites.google.com/lbl.gov/daphne/home?authuser=0)
 * [Mariam Kiran ](https://sites.google.com/lbl.gov/daphne/home?authuser=0)
         
    
