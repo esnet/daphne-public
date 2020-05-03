@@ -1,5 +1,8 @@
-# rl_chameleon (deeproute-gym)
-AI gym for DEEP-ROUTE on Chameleon Testbed
+<p align="center">
+<img src="https://github.com/esnet/daphne-public/tree/master/Chameleon/figires/cham_top.pdf" width="100%" height="100%" title="FlexiBO logo">
+<p>
+
+# DeepRoute: An AI gym enviroment for Deep Route on Chameleon Testbed (deeproute-gym)
 
 This is a simulation of DEEP-ROUTE link selection experiment. 
 DEEP-ROUTE has two links between the University of Chicago(UC) and Texas Advanced Computing Center(TACC) multi-side via Exogeni and Internet2 L2 socket. The experiment is to represent this optimal link selection as a deep reinforcement learning experiment.
@@ -86,5 +89,10 @@ sudo pip3 install -e .
         If you get an error message please ==> cd rl_chameleon/deeproute-gym-stat-master ==>run sudo pip3 install -e .
         
         Please note that this experiment was succesfully reproduced using Ubuntu OS.
+
+## Contacts
+
+* Bashir Mohammed
+* [Mariam Kiran ](https://sites.google.com/lbl.gov/daphne/home?authuser=0)
         
    
