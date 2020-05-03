@@ -4,7 +4,7 @@
 
 # DeepRoute: An AI gym enviroment for Deep Route on Chameleon Testbed (deeproute-gym)
 This is a simulation for deep route network route selection experiment. 
-DeepRoute has two links between the University of Chicago(UC) and Texas Advanced Computing Center(TACC) multi-side via Exogeni and Internet2 L2 socket. The experiment is to represent this optimal link selection as a deep reinforcement learning experiment.
+DeepRoute has two links between the University of Chicago(UC) and Texas Advanced Computing Center(TACC) multi-side via Exogeni and Internet2 L2 socket. The experiment is to represent this optimal link selection as a deep reinforcement learning problem.
 
 
 # Resources and Tools Required for Reproducibilty
@@ -17,7 +17,6 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
     * Create one Compute Node at UC and TACC.
     * Create one Controller Node at TACC using the Ryu Controller.
     * Connect instances to network created above.
-    
     
 * Bare Metal Nodes:
     * One Client(Compute Node-CHI@UC)
