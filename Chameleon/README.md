@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/esnet/daphne-public/tree/master/Chameleon/figires/cham_topo.png" width="100%" height="100%" title="FlexiBO logo">
+<img src="https://github.com/esnet/daphne-public/blob/master/Chameleon/figures/cham_topo.png" width="100%" height="100%" title="cham_topo">
 <p>
 
 # DeepRoute: An AI gym enviroment for Deep Route on Chameleon Testbed (deeproute-gym)
