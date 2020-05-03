@@ -31,7 +31,7 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
     * Direct Stitch Link via Exogeni to connect both sites. For more details on how to stitch go to: https://tinyurl.com/u7yk47p/
 * Cross Traffic - Iperf3
 
-```iperf3 -c <server_ip> -t 20 -i 5 -b 100Mbps -u -t 500```
+    ```iperf3 -c <server_ip> -t 20 -i 5 -b 100Mbps -u -t 500```
 * Controller - RYU OpenFlow
 
     Included: simple_switch_13_custom_chameleon_org.py
@@ -40,43 +40,30 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
      
 * Login to your Controller node at (TACC) and clone this repo - https://github.com/esnet/daphne-public.git
 
- ```https://github.com/esnet/daphne-public.git```
+   ```https://github.com/esnet/daphne-public.git```
  
     * cd ~/Chameleon: 
- * Dependencies: install in the following order: ignore errors
- 
-  ```sudo apt-get install -y python3-setuptools```
-  
-  ```sudo python3 setup.py install```
-  
-  ```sudo pip3 install -e .```
-  
-  ```git clone https://github.com/mininet/mininet```
-  
-  ```cd ~/mininet```
-  
-  ```git tag```
-  
-  ```git checkout```
-  
-  ```cd ..```
-  
-  ```sudo mininet/util/install.sh -a```
-     
-  ```pip install gym```
-  
-  ```sudo pip3 install keras```
-  
-  ```sudo pip3 install tensorflow```
-  
-  ```cd Chameleon/deeproute-gym-stat-master```
-  
-  ```sudo pip3 install -e .```
+  * Dependencies: install in the following order:
+
+        sudo apt-get install -y python3-setuptools
+        sudo python3 setup.py install
+        sudo pip3 install -e .
+        git clone https://github.com/mininet/mininet
+        cd ~/mininet
+        git tag
+        git checkout
+        cd ..
+        sudo mininet/util/install.sh -a
+        pip install gym
+        sudo pip3 install keras
+        sudo pip3 install tensorflow
+        cd Chameleon/deeproute-gym-stat-master
+        sudo pip3 install -e .
    
 *********
  
 * in \experiment folder run the following via terminal:
-    
+
         deeproute_rl_dqn_agent.py
         deeproute_rl_random_agent.py
         
