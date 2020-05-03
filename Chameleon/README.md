@@ -43,7 +43,7 @@ DeepRoute has two links between the University of Chicago(UC) and Texas Advanced
    ```https://github.com/esnet/daphne-public.git```
  
     * cd ~/Chameleon: 
-  * Dependencies: install in the following order:
+ * Dependencies: install in the following order:
 
         sudo apt-get install -y python3-setuptools
         sudo python3 setup.py install
