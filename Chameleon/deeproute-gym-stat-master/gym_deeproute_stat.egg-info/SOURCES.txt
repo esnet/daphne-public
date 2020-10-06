@@ -1,7 +1,0 @@
-README.md
-setup.py
-gym_deeproute_stat.egg-info/PKG-INFO
-gym_deeproute_stat.egg-info/SOURCES.txt
-gym_deeproute_stat.egg-info/dependency_links.txt
-gym_deeproute_stat.egg-info/requires.txt
-gym_deeproute_stat.egg-info/top_level.txt
