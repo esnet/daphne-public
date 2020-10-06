@@ -1,0 +1,25 @@
+------------------------------------------------------------
+Client connecting to 67.205.158.239, TCP port 5001
+TCP window size: 0.13 MByte (default)
+------------------------------------------------------------
+[  4] local 10.0.0.229 port 58454 connected with 67.205.158.239 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  4]  0.0-149.3 sec   102 MBytes  5.75 Mbits/sec
+ 1  10.0.0.1 (10.0.0.1)  3.787 ms  2.773 ms  3.281 ms
+ 2  96.120.88.121 (96.120.88.121)  19.845 ms  18.694 ms  16.580 ms
+ 3  68.87.198.45 (68.87.198.45)  19.318 ms  16.403 ms  18.023 ms
+ 4  68.86.143.37 (68.86.143.37)  18.306 ms  16.293 ms  18.581 ms
+ 5  be-224-rar01.pinole.ca.sfba.comcast.net (162.151.78.185)  17.501 ms  18.844 ms  14.189 ms
+ 6  be-298-ar01.santaclara.ca.sfba.comcast.net (162.151.86.57)  24.158 ms  16.075 ms  18.912 ms
+ 7  be-36311-cs01.sunnyvale.ca.ibone.comcast.net (96.110.41.65)  22.375 ms  23.093 ms  19.212 ms
+ 8  be-3111-pe11.529bryant.ca.ibone.comcast.net (96.110.33.82)  20.199 ms  16.639 ms  16.359 ms
+ 9  50.208.233.210 (50.208.233.210)  16.834 ms  19.495 ms  16.121 ms
+10  * nyk-bb3-link.telia.net (62.115.114.4)  86.695 ms  85.183 ms
+11  nyk-b3-link.telia.net (62.115.139.151)  86.296 ms  85.090 ms
+    nyk-b3-link.telia.net (62.115.140.223)  83.690 ms
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  67.205.158.239 (67.205.158.239)  88.254 ms  87.118 ms *
