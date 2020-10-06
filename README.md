@@ -5,6 +5,7 @@
 # Deep Learning and Artificial Intelligence for High-Performance Networks (DAPHNE Lab)
 
 The DAPHNE team is part of the Scientific Networking and Computational Research Divisions of Lawrence Berkeley National Laboratory. The group is led by Dr. Mariam Kiran.
+This project is funded under DOE ASCR Early Career Project 2017-2022.
 
 Our research explores machine learning, deep learning and AI techniques when applied to operational networking and distributed computing problems.
 
