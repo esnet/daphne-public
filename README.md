@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/esnet/daphne-public/blob/master/Figures/d-icon.png" width="100%" height="100%" title="daphne-project">
+<img src="https://github.com/esnet/daphne-public/blob/master/Figures/d-icon.png" width="20%" height="20%" title="daphne-project">
 <p>
   
 # Deep Learning and Artificial Intelligence for High-Performance Networks (DAPHNE Lab)
