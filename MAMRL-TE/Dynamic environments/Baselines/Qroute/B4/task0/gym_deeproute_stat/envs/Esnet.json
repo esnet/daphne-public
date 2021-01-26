@@ -1,0 +1,355 @@
+{
+  "data": {
+    "mapTopology": {
+      "nodes": [
+        {
+          "name": "PNWG",
+          "posx": 0.1,
+          "posy": 0.9
+        },
+        {
+          "name": "SACR",
+          "posx": 0.1,
+          "posy": 0.6
+        },
+        {
+          "name": "SUNN",
+          "posx": 0.1,
+          "posy": 0.25
+        },
+        {
+          "name": "BOIS",
+          "posx": 0.25,
+          "posy": 0.75
+        },
+        {
+          "name": "DENV",
+          "posx": 0.3,
+          "posy": 0.45
+        },
+        {
+          "name": "CHIC",
+          "posx": 0.5,
+          "posy": 0.6
+        },
+        {
+          "name": "LSVN",
+          "posx": 0.2,
+          "posy": 0.45
+        },
+        {
+          "name": "ELPA",
+          "posx": 0.3,
+          "posy": 0.1
+        },
+        {
+          "name": "KANS",
+          "posx": 0.4,
+          "posy": 0.45
+        },
+        {
+          "name": "ALBQ",
+          "posx": 0.3,
+          "posy": 0.25
+        },
+        {
+          "name": "HOUS",
+          "posx": 0.4,
+          "posy": 0.1
+        },
+        {
+          "name": "NASH",
+          "posx": 0.5,
+          "posy": 0.25
+        },
+        {
+          "name": "STAR",
+          "posx": 0.5,
+          "posy": 0.7
+        },
+        {
+          "name": "WASH",
+          "posx": 0.6,
+          "posy": 0.3
+        },
+        {
+          "name": "ATLA",
+          "posx": 0.53,
+          "posy": 0.1
+        },
+        {
+          "name": "AOFA",
+          "posx": 0.62,
+          "posy": 0.5
+        },
+        {
+          "name": "CERN",
+          "posx": 0.9,
+          "posy": 0.5
+        },
+        {
+          "name": "LOND",
+          "posx": 0.8,
+          "posy": 0.6
+        },
+        {
+          "name": "NEWY",
+          "posx": 0.7,
+          "posy": 0.6
+        },
+        {
+          "name": "BOST",
+          "posx": 0.7,
+          "posy": 0.72
+        },
+        {
+          "name": "AMST",
+          "posx": 0.9,
+          "posy": 0.7
+        }
+        ]
+        , 
+        "edges":[
+          {
+            "name":"edge1",
+            "from":"PNWG",
+            "to":"SACR",
+            "BW":1000,
+            "Lat":10
+          },
+          {
+            "name":"edge2",
+            "from":"PNWG",
+            "to":"DENV",
+            "BW":1000,
+            "Lat":12
+          },
+          {
+            "name":"edge3",
+            "from":"PNWG",
+            "to":"BOIS",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge4",
+            "from":"SUNN",
+            "to":"SACR",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge5",
+            "from":"CHIC",
+            "to":"SACR",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge6",
+            "from":"DENV",
+            "to":"SACR",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge7",
+            "from":"SUNN",
+            "to":"LSVN",
+            "BW":1000,
+            "Lat":8
+          },
+          {
+            "name":"edge8",
+            "from":"SUNN",
+            "to":"ELPA",
+            "BW":1000,
+            "Lat":10
+          },
+          {
+            "name":"edge9",
+            "from":"DENV",
+            "to":"LSVN",
+            "BW":1000,
+            "Lat":12
+          },
+          {
+            "name":"edge10",
+            "from":"DENV",
+            "to":"ALBQ",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge11",
+            "from":"DENV",
+            "to":"KANS",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge12",
+            "from":"ALBQ",
+            "to":"ELPA",
+            "BW":1000,
+            "Lat":10
+          },
+          {
+            "name":"edge13",
+            "from":"HOUS",
+            "to":"ELPA",
+            "BW":1000,
+            "Lat":12
+          },
+          {
+            "name":"edge14",
+            "from":"HOUS",
+            "to":"KANS",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge15",
+            "from":"HOUS",
+            "to":"NASH",
+            "BW":1000,
+            "Lat":8
+          },
+          {
+            "name":"edge16",
+            "from":"CHIC",
+            "to":"KANS",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge17",
+            "from":"CHIC",
+            "to":"NASH",
+            "BW":1000,
+            "Lat":8
+          },
+          {
+            "name":"edge18",
+            "from":"CHIC",
+            "to":"STAR",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge19",
+            "from":"CHIC",
+            "to":"WASH",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge20",
+            "from":"NASH",
+            "to":"WASH",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge21",
+            "from":"ATLA",
+            "to":"WASH",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge22",
+            "from":"ATLA",
+            "to":"NASH",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge23",
+            "from":"AOFA",
+            "to":"WASH",
+            "BW":1000,
+            "Lat":10
+          },
+          {
+            "name":"edge24",
+            "from":"AOFA",
+            "to":"NEWY",
+            "BW":1000,
+            "Lat":12
+          },
+          {
+            "name":"edge25",
+            "from":"WASH",
+            "to":"CERN",
+            "BW":1000,
+            "Lat":12
+          },
+          {
+            "name":"edge26",
+            "from":"AOFA",
+            "to":"LOND",
+            "BW":1000,
+            "Lat":10
+          },
+          {
+            "name":"edge27",
+            "from":"NEWY",
+            "to":"BOST",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge28",
+            "from":"BOST",
+            "to":"AMST",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge29",
+            "from":"LOND",
+            "to":"AMST",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge30",
+            "from":"CERN",
+            "to":"AMST",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge31",
+            "from":"DENV",
+            "to":"BOIS",
+            "BW":1000,
+            "Lat":8
+          },
+          {
+            "name":"edge32",
+            "from":"BOST",
+            "to":"STAR",
+            "BW":1000,
+            "Lat":10
+          },
+          {
+            "name":"edge33",
+            "from":"AOFA",
+            "to":"STAR",
+            "BW":1000,
+            "Lat":12
+          },
+          {
+            "name":"edge34",
+            "from":"NEWY",
+            "to":"LOND",
+            "BW":1000,
+            "Lat":3
+          }
+          ]
+    }
+  
+  }
+}

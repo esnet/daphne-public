@@ -1,0 +1,105 @@
+{
+  "data": {
+    "mapTopology": {
+      "nodes": [
+        {
+          "name": "A",
+          "posx": 0.25,
+          "posy": 0.75
+        },
+        {
+          "name": "B",
+          "posx": 0.25,
+          "posy": 0.25
+        },
+        {
+          "name": "C",
+          "posx": 0.75,
+          "posy": 0.75
+        },
+        {
+          "name": "D",
+          "posx": 0.75,
+          "posy": 0.25
+        },
+        {
+          "name": "E",
+          "posx": 0.4,
+          "posy": 0.5
+        },
+        {
+          "name": "F",
+          "posx": 0.6,
+          "posy": 0.5
+        }
+        ]
+        , 
+        "edges":[
+          {
+            "name":"edge1",
+            "from":"A",
+            "to":"E",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge2",
+            "from":"A",
+            "to":"C",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge3",
+            "from":"B",
+            "to":"E",
+            "BW":1200,
+            "Lat": 8
+          },
+          {
+            "name":"edge4",
+            "from":"B",
+            "to":"D",
+            "BW":1000,
+            "Lat":3
+          },
+          {
+            "name":"edge5",
+            "from":"C",
+            "to":"F",
+            "BW":1000,
+            "Lat":6
+          },
+          {
+            "name":"edge6",
+            "from":"F",
+            "to":"D",
+            "BW":1200,
+            "Lat":3
+          },
+          {
+            "name":"edge7",
+            "from":"F",
+            "to":"E",
+            "BW":1000,
+            "Lat":8
+          },
+          {
+            "name":"edge8",
+            "from":"A",
+            "to":"B",
+            "BW":1200,
+            "Lat":3
+          },
+          {
+            "name":"edge9",
+            "from":"C",
+            "to":"D",
+            "BW":1200,
+            "Lat":3
+          }
+          ]
+    }
+  
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "data": {
+    "mapTopology": {
+      "nodes": [
+        {
+          "name": "A",
+          "posx": 0.1,
+          "posy": 0.9
+        },
+        {
+          "name": "B",
+          "posx": 0.1,
+          "posy": 0.6
+        },
+        {
+          "name": "C",
+          "posx": 0.1,
+          "posy": 0.25
+        },
+        {
+          "name": "D",
+          "posx": 0.25,
+          "posy": 0.75
+        },
+        {
+          "name": "E",
+          "posx": 0.3,
+          "posy": 0.45
+        },
+        {
+          "name": "F",
+          "posx": 0.5,
+          "posy": 0.6
+        },
+        {
+          "name": "G",
+          "posx": 0.2,
+          "posy": 0.45
+        },
+        {
+          "name": "H",
+          "posx": 0.3,
+          "posy": 0.1
+        },
+        {
+          "name": "I",
+          "posx": 0.4,
+          "posy": 0.45
+        },
+        {
+          "name": "J",
+          "posx": 0.3,
+          "posy": 0.25
+        },
+        {
+          "name": "K",
+          "posx": 0.4,
+          "posy": 0.1
+        },
+        {
+          "name": "L",
+          "posx": 0.5,
+          "posy": 0.25
+        }
+        ]
+        ,
+        "edges":[
+          {
+            "name":"edge1",
+            "from":"A",
+            "to":"B",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge2",
+            "from":"A",
+            "to":"C",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge3",
+            "from":"B",
+            "to":"D",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge4",
+            "from":"C",
+            "to":"E",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge5",
+            "from":"C",
+            "to":"F",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge6",
+            "from":"D",
+            "to":"E",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge7",
+            "from":"D",
+            "to":"F",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge8",
+            "from":"E",
+            "to":"H",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge9",
+            "from":"E",
+            "to":"G",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge10",
+            "from":"F",
+            "to":"G",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge11",
+            "from":"F",
+            "to":"H",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge12",
+            "from":"G",
+            "to":"H",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge13",
+            "from":"G",
+            "to":"K",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge14",
+            "from":"H",
+            "to":"J",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge15",
+            "from":"I",
+            "to":"J",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge16",
+            "from":"I",
+            "to":"K",
+            "BW":0,
+            "Lat":3
+          },
+          {
+            "name":"edge17",
+            "from":"J",
+            "to":"L",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge18",
+            "from":"J",
+            "to":"K",
+            "BW":5000000,
+            "Lat":3
+          },
+          {
+            "name":"edge19",
+            "from":"K",
+            "to":"L",
+            "BW":5000000,
+            "Lat":3
+          }
+          ]
+    }
+
+  }
+}
