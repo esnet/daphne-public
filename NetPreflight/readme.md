@@ -38,4 +38,3 @@ Authors
 ---------
 - Bashir Mohammed
 - Mariam Kiran
-- Divneet Kaur
