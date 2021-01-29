@@ -105,10 +105,10 @@ def main():
         download_fileV2(targetHost=host, targetFile=file, username=username, key=key)
         end = time.time()
 
-        lapse = round(((end - start)/1000), 3)
+        lapse = round(((end - start)/10), 3)
         with open(outfile, 'a') as ff:
             tp = round(((BufferSize*8)) / (lapse+0.000001), 3)
-            tp /= 1000000
+            tp /= 100
             smallist = [iteration, tp, lapse, BufferSize]
             data.append(smallist)
             ff.write('iteration {},{},{},{}\n'.format(iteration, tp, lapse, BufferSize))
