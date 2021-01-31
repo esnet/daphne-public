@@ -1,4 +1,4 @@
-Project under development
+Project under development.
 
 
 # Overview
@@ -37,9 +37,12 @@ To Add Abstract
      
      * on HOST_B: No action is required on host_B
    
-     * Remember to specify the TargetHost IP address for Example.                             
+     * Remember to specify the TargetHost IP address for Example.     
+
      * user: root  
-     * pw: Password1Pass                                                                      
+
+     * pw: Password1Pass   
+
      * Requirements: sudo pip install paramiko
      
      
