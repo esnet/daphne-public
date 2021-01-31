@@ -22,6 +22,8 @@ To Add Abstract
 
     * bash <script_name (.sh)> <no._of_runs> <server_ip> <file_transfer_size> <file_output>
 
+    * bash <script_name (.sh)> <no._of_runs> <server_ip> <file_transfer_size> <file_output>
+
   ```e.g bash preflightcheck.sh 5 192.5.87.205 1G testresult.txt```
   
 
