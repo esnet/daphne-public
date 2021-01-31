@@ -23,12 +23,13 @@ To Add Abstract
     * bash <script_name (.sh)> <no._of_runs> <server_ip> <file_transfer_size> <file_output>
 
   ```e.g bash preflightcheck.sh 5 192.5.87.205 1G testresult.txt```
+  
 
 * Version 2) Without Iperf - using password
 
     * on HOST_A: On your terminal run the command below with the following arguements        
                                                                                         
-    * python <scriptname> -H <TargetHostIPaddress> -F <targetFile> -I <no. of iterations>   
+      python <scriptname> -H <TargetHostIPaddress> -F <targetFile> -I <no. of iterations>   
                                                                                         
      ```e.g python preflight_pass.py -H 67.205.158.239 -F /root/largefiles/100MB.zip -I 5```
      
@@ -41,9 +42,10 @@ To Add Abstract
      * pw: Password1Pass                                                                      
      * Requirements: sudo pip install paramiko
      
+     
 * Version 2) Without Iperf - using private keys
 
-    * on HOST_A: On your terminal run the command below with the following arguements        
+    * on HOST_A: On your terminal run the command below with the following arguements.        
                                                                                         
     * python <scriptname> -H <TargetHostIPaddress> -K <KeyFilepath>  -F <targetFile> -I <no. of iterations>   
                                                                                         
