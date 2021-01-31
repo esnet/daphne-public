@@ -1,20 +1,20 @@
 Project under development
 
 
-Overview
+# Overview
 ---------
+A simple end-to-end, light-weight tool for testing Network Performance, measuring available throughput and displaying the route across the network.
 
-Testing Network Performance before DTN-DTN transfer (designed for big data transfers)
+# NetPreflight: Testing Network Performance before DTN-DTN transfer (designed for big data transfers)
 ------------------------------------------------------------------------------
 
 To Add Abstract
 
-Version 1)
-Network Measurement Tools used - Iperf, Traceroute.
+* Version 1) Network Measurement Tools used - Iperf, Traceroute.
 
-- iperf3 -c <server_ip>
-
-- traceroute <server_ip>
+  ```iperf3 -s ```
+  ```iperf3 -c <server_ip>```
+  ```traceroute <server_ip>```
 
 Run the following on your DTN terminal:
 
