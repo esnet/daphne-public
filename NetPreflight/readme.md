@@ -48,7 +48,7 @@ To Add Abstract
     * Requirements: sudo pip install paramiko
      
      
-* Version 2) Without Iperf - using private keys
+* Version 3) Without Iperf - using private keys
 
     * on HOST_A: On your terminal run the command below with the following arguements.        
                                                                                         
