@@ -52,7 +52,7 @@ To Add Abstract
 
     * on HOST_A: On your terminal run the command below with the following arguements.        
                                                                                         
-    * python <scriptname> -H <TargetHostIPaddress> -K <KeyFilepath>  -F <targetFile> -I <no.of_iterations>   
+    ```python <script_name> -H <TargetHost_IPaddress> -K <KeyFilepath> - F <targetFile> - I <no.of_iterations>``` 
                                                                                         
     ```e.g python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5```
      
