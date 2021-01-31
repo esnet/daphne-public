@@ -18,21 +18,20 @@ To Add Abstract
   
   ```traceroute <server_ip>```
 
-Run the following on your DTN terminal:
+    * Run the following on your DTN terminal:
 
-- bash <script_name (.sh)> <no._of_runs> <server_ip> <file_transfer_size> <file_output>
+    * bash <script_name (.sh)> <no._of_runs> <server_ip> <file_transfer_size> <file_output>
 
-e.g bash preflightcheck.sh 5 192.5.87.205 1G testresult.txt
+  ```e.g bash preflightcheck.sh 5 192.5.87.205 1G testresult.txt```
 
-Version 2)
-Without Iperf
+* Version 2) Without Iperf
 
-- python3 <scriptname> -H <TargetHostIPaddress> -F <targetFile> -I <no. of iterations>   
+    * python3 <scriptname> -H <TargetHostIPaddress> -F <targetFile> -I <no. of iterations>   
 
- e.g python3 netpreflight_ssh_traceroute.py -H 192.5.87.127 -F d-icon.png -I 5
+  ```e.g python3 netpreflight_ssh_traceroute.py -H 192.5.87.127 -F d-icon.png -I 5```
 
-on HOST_B: No action is required on host_B     
-Specify the TargetHost IP address for the traceroute command     
+    * on HOST_B: No action is required on host_B     
+    * Specify the TargetHost IP address for the traceroute command     
                                                                          
 
 
