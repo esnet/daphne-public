@@ -30,7 +30,7 @@ To Add Abstract
 
     * on HOST_A: On your terminal run the command below with the following arguements  
 
-    * python <script_name> -H <oTargetHost_IPaddress>  - F <targetFile> - I <no.of_iterations>      
+    ```python <script_name> -H <TargetHost_IPaddress>  - F <targetFile> - I <no.of_iterations>```      
                                                                                           
                                                                                         
     ```e.g python preflight_pass.py -H 67.205.158.239 -F /root/largefiles/100MB.zip -I 5```
