@@ -17,15 +17,16 @@
 # python preflight_keys.py -H 192.5.87.20 -K /home/cc/experiments/uc-mc4n-key.pem -F /home/cc/experiments/5MB.zip -I 5     #                                                                                        #
 # Requirements: sudo pip install paramiko                                                                                  #
 ############################################################################################################################
-
+import json
+import datetime
 import socket, os, sys, optparse, time
 import subprocess
 import paramiko
-
+import threading
 import getpass
 
 ssh = paramiko.SSHClient()
-outfile = 'results.csv'
+outfile = 'results'
 BufferSize = 1024
 
 username = ''
@@ -60,6 +61,9 @@ def download_fileV3(targetHost, targetFile, username,key):
     c.close()
 
 def main():
+    currentime = datetime.datetime.now() 
+    newfile = ('res' + str(currentime) + '.txt')
+    print(newfile)
     parser = optparse.OptionParser('usage %prog -H <targetHost> -F <targetFile> -I <iterations>')
     parser.add_option('-H', dest='targetHost', type='string', help='')
     parser.add_option('-K', dest='key', type='string', help=' Specify the location of your key')
@@ -76,20 +80,69 @@ def main():
 
     headings = ["Iter", "Throughput", "Time(s)", "Buffer"]
     data = []
+    threads = 2
 
+    jobs = []
+    for i in range(0, threads):
+        out_list = list()
+        thread = threading.Thread(multithreading(iterations, host, file, username, key, headings, i))
+        jobs.append(thread)
+
+    for j in jobs:
+        j.start()
+
+    # Ensure all of the threads have finished
+    for j in jobs:
+        j.join()
+
+    print ("List processing complete.")
+
+
+    
+def multithreading(iterations, host, file, username, key, headings, count):
+    data = []
+    json_data = {}
+    currentime = datetime.datetime.now()
+    with open(outfile + str(count) + ".csv", 'a') as ff:
+        ff.write(str(currentime)+'\n')
+    ff.close()
     for iteration in range(iterations):
         start = time.time()
         download_fileV3(targetHost=host, targetFile=file, username=username, key=key)
         end = time.time()
 
         lapse = round(((end - start)/10), 3)
-        with open(outfile, 'a') as ff:
+        #with open(outfile +str(currentime)+ str(count) + ".csv", 'a') as ff:
+        with open(outfile + str(count) + ".csv", 'a') as ff:
+        #    ff.write(str(currentime))
             tp = round(((BufferSize*8)) / (lapse+0.000001), 3)
             tp /= 100
             smallist = [iteration, tp, lapse, BufferSize]
             data.append(smallist)
             ff.write('iteration {},{},{},{}\n'.format(iteration, tp, lapse, BufferSize))
-        ff.close()
+        # import ast
+        # with open("memory.json") as json_file:
+        #     data_memory=json.load(json_file)
+        #     #print(data_memory)
+        #     json_data = {host:{"iteration":iteration,"Throughput":tp, "lapse":lapse, "BufferSize":BufferSize}}
+        #     aaa=ast.literal_eval(data_memory)
+        #     aaa.update(json_data)
+    
+        #     json.dump(str(aaa),open("memory.json","w"))
+
+        try:
+            with open("memory.json") as json_file:
+                data_memory=json.load(json_file)
+                json_data = {host:{"iteration":iteration,"Throughput":tp, "lapse":lapse, "BufferSize":BufferSize, "Timestamp":str(currentime)}}
+                data_memory.update(json_data)
+                
+                json.dump(data_memory, open("memory.json", "w"), indent=4)
+        except:
+            json.dump(json_data, open("memory.json", "w"),indent=4)
+
+            
+            #json.dump(str(json_data),open("memory.json","w"))
+
     format_row = "{:>12}" * (len(headings) + 1)
     print(format_row.format("", *headings))
     for row in data: 
@@ -98,7 +151,7 @@ def main():
     file_ = open('traceresult.txt', 'w+')
     subprocess.run('traceroute '+ host, shell=True, stdout=file_)
     file_.close()
-
+     
     with open('traceresult.txt', 'r') as f:
             print('netpreflight',f.read())
        
