@@ -1,15 +1,38 @@
 {
     "192.5.86.216": {
-        "iteration": 6,
-        "Throughput": 470.80188999999996,
-        "lapse": 0.174,
+        "iteration": 2,
+        "Throughput": 479.06153,
+        "lapse": 0.171,
         "BufferSize": 1024,
-        "Timestamp": "2021-03-08 03:37:21.622458"
+        "Timestamp": "2021-03-09 04:04:12.851378",
+        "trace_result": [
+            "traceroute to 192.5.86.216 (192.5.86.216), 30 hops max, 60 byte packets\n",
+            " 1  vip-205.nersc.gov (128.55.205.1)  0.193 ms vr205-cr2.nersc.gov (128.55.205.254)  0.197 ms  0.219 ms\n",
+            " 2  cr2-br1.nersc.gov (128.55.192.113)  0.612 ms cr1-br1.nersc.gov (128.55.192.109)  0.589 ms  0.776 ms\n",
+            " 3  sunncr5-nersc.es.net (198.129.78.33)  1.596 ms  1.736 ms  1.616 ms\n",
+            " 4  sacrcr55-ip-b-sunncr55.es.net (134.55.40.145)  5.450 ms  5.339 ms  5.348 ms\n",
+            " 5  chiccr55-ip-a-sacrcr55.es.net (134.55.40.150)  46.871 ms  46.879 ms  46.856 ms\n",
+            " 6  anl-ip-g-chiccr5.es.net (198.124.216.234)  48.951 ms  48.962 ms  48.942 ms\n",
+            " 7  192.5.86.216 (192.5.86.216)  49.209 ms  49.262 ms  49.246 ms\n"
+        ]
     },
     "129.114.109.229": {
         "iteration": 1,
-        "Throughput": 409.59794999999997,
-        "lapse": 0.2,
+        "Throughput": 435.74235999999996,
+        "lapse": 0.188,
         "BufferSize": 1024,
-        "Timestamp": "2021-03-08 03:18:56.278553"
+        "Timestamp": "2021-03-09 03:50:44.426669",
+        "trace_result": [
+            "traceroute to 129.114.109.229 (129.114.109.229), 30 hops max, 60 byte packets\n",
+            " 1  vr205-cr2.nersc.gov (128.55.205.254)  0.193 ms  0.228 ms  0.228 ms\n",
+            " 2  cr2-br1.nersc.gov (128.55.192.113)  0.457 ms  0.727 ms  0.974 ms\n",
+            " 3  sunncr5-nersc.es.net (198.129.78.33)  1.668 ms  1.653 ms  1.642 ms\n",
+            " 4  elpacr5-ip-a-sunncr5.es.net (134.55.37.42)  25.426 ms  25.531 ms  25.459 ms\n",
+            " 5  houscr5-ip-a-elpacr5.es.net (134.55.40.198)  39.757 ms  39.800 ms  39.830 ms\n",
+            " 6  learn-houscr5.es.net (198.129.33.162)  39.979 ms  39.998 ms  39.979 ms\n",
+            " 7  tx-bb-i2-hstn.tx-learn.net (74.200.187.26)  41.179 ms  41.083 ms  41.065 ms\n",
+            " 8  192.88.12.234 (192.88.12.234)  49.453 ms  48.850 ms  48.833 ms\n",
+            " 9  qfx10008-vl661-ptp.net.tacc.utexas.edu (129.114.0.141)  45.315 ms  45.252 ms  45.688 ms\n",
+            "10  chi-dyn-129-114-109-229.tacc.chameleoncloud.org (129.114.109.229)  44.553 ms  44.732 ms  44.679 ms\n"
+        ]
     }

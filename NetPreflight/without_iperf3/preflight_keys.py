@@ -32,6 +32,7 @@ BufferSize = 1024
 username = ''
 key = ''
 
+
 def userprompt():
     username = input("Hello! Welcome to Netpreflight Tool! \n\nUsername: ") 
     key = getpass.getpass('Password :: ')
@@ -82,6 +83,10 @@ def main():
     data = []
     threads = 2
 
+    file_ = open('traceresult.txt', 'w+')
+    subprocess.run('traceroute '+ host, shell=True, stdout=file_)
+    file_.close()
+
     jobs = []
     for i in range(0, threads):
         out_list = list()
@@ -129,11 +134,13 @@ def multithreading(iterations, host, file, username, key, headings, count):
         #     aaa.update(json_data)
     
         #     json.dump(str(aaa),open("memory.json","w"))
-
+        
+        with open ('traceresult.txt') as tfile:
+            trace_result = [i for i in tfile.readlines() if "* * *" not in i]
         try:
             with open("memory.json") as json_file:
                 data_memory=json.load(json_file)
-                json_data = {host:{"iteration":iteration,"Throughput":tp, "lapse":lapse, "BufferSize":BufferSize, "Timestamp":str(currentime)}}
+                json_data = {host:{"iteration":iteration,"Throughput":tp, "lapse":lapse, "BufferSize":BufferSize, "Timestamp":str(currentime), "trace_result":trace_result}}
                 data_memory.update(json_data)
                 
                 json.dump(data_memory, open("memory.json", "w"), indent=4)
@@ -148,9 +155,6 @@ def multithreading(iterations, host, file, username, key, headings, count):
     for row in data: 
         print(format_row.format('', *row))
 
-    file_ = open('traceresult.txt', 'w+')
-    subprocess.run('traceroute '+ host, shell=True, stdout=file_)
-    file_.close()
      
     with open('traceresult.txt', 'r') as f:
             print('netpreflight',f.read())
